@@ -153,4 +153,9 @@ Do last week’s assignment again, but this time:
 2. You can use any modality (e.g., vibration, sound) to prototype the behaviors! Again, be creative! Feel free to fork and modify the tinkerbell code!
 3. We will be grading with an emphasis on creativity.
 
+Smart chair:
+Since many people start to work from home, it is necessary to sit properlly and ensure to move around frequently to avoid back pain or any other health related issues.
+I designed this chair that would deliver different vibration mode to remind people adjust their sitting position, or stand up and move around every 30 minutes.
+The current prototype is restricted with the limited tech equipment. The ideal design would have the vibration only noticeable to users themselves, like Apple Watch. In this circumstance, people could use it even with roommates withouth distracting others.
+
 [![Watch the video](https://img.youtube.com/vi/hDkVh7DvJ54/maxresdefault.jpg)](https://youtu.be/hDkVh7DvJ54)
