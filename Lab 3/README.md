@@ -1,7 +1,7 @@
 # Chatterboxes
-Week 1 Collaborator: Christy Wu, Jane Wang
+Week 1 Collaborator: Sylvia Ding, Christy Wu
 
-Week 2 Collaborator: Christy Wu, Jane Wang, Jonathan Tan
+Week 2 Collaborator: Sylvia Ding, Christy Wu, Jonathan Tan
 
 Sylvia Ding: Came up with the idea, designed the Conversational User Flow, built a CUI prototype using Voice Flow and experimented on different logics and utterances. Also worked on hardware wire for LED light and temperature sensor. 
 
