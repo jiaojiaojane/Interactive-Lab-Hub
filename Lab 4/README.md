@@ -175,6 +175,16 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+Idea 1: posture on chairs to remind for sitting posture, cultivate habit for healthy spines by keep sitting traight!
+
+Idea 2: Get the right angle to draw everything!
+
+Idea 3: Play music when stepping into the shower.
+
+Idea 4: Send reminder to the parents when their children are apart from them in a certain distance to avoid losing their children in public space.
+
+Idea 5: detect the skin color to find the matching foundation color
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
@@ -223,12 +233,26 @@ Think about how you want to present the information about what your sensor is se
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+We chose the sitting posture reminder idea to prototype. 
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+We wanted the device could be incorprated into a neck pillow, so we used a neck pillow size paperboard box to prototype. Meanwhile, we hope the device could detect the distance from user's back to itself.
 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+
+<img src="front.jpeg" width="400"/>
+
+We integrated the distance detector and the speaker in the front of the device, so that it could detect its distance to the user and play the audio when user is not sitting straight/ leaning forward too much.
+
+<img src="volume.jpeg" width="400"/>
+
+We made a volume control switch on the top of the box so that users could adjust the volume of the audio warning.
+
+<img src="side.jpeg" width="400"/>
+
+We used the band to tie the device on the chair, and we think the device could be equipped as a neck pillow so that it could remind users of their sitting posture while making them comfortable. We think that the device could be incorporated into a real neck pillow tied on the chair's back.
 
 
 LAB PART 2
