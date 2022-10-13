@@ -232,23 +232,23 @@ Think about how you want to present the information about what your sensor is se
 
 Idea 1: posture on chairs to remind for sitting posture, cultivate habit for healthy spines by keep sitting traight!
 
-IMG_1B2D79A80DAA-1
+<img src="https://user-images.githubusercontent.com/71368796/195479150-2b77f0ac-b591-4268-bc50-2f26c46809cb.jpeg"/>
 
 Idea 2: Get the right angle to draw everything!
 
-IMG_BD76BAFCED18-1
+<img src="https://user-images.githubusercontent.com/71368796/195481171-1dcb9e93-fb89-478c-93c7-0be94ac1064a.jpeg"/>
 
 Idea 3: Play music when stepping into the shower.
 
-IMG_FAD93CFCDAE6-1
+<img src="https://user-images.githubusercontent.com/71368796/195483874-91038473-ff3b-4d0e-9263-7517a1d3f65a.jpeg"/>
 
 Idea 4: Send reminder to the parents when their children are apart from them in a certain distance to avoid losing their children in public space.
 
-IMG_0528
+<img src="https://user-images.githubusercontent.com/71368796/195484609-795d3d71-795d-4eaf-8c3e-62e87613197e.jpg"/>
 
 Idea 5: Detect the skin color to find the matching foundation color
 
-IMG_A4D2CBEE66C0-1
+<img src="https://user-images.githubusercontent.com/71368796/195485612-6c9d0e18-2b57-43b4-baca-7d608e767cbf.jpeg"/>
 
 
 
