@@ -230,6 +230,28 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+Idea 1: posture on chairs to remind for sitting posture, cultivate habit for healthy spines by keep sitting traight!
+
+IMG_1B2D79A80DAA-1
+
+Idea 2: Get the right angle to draw everything!
+
+IMG_BD76BAFCED18-1
+
+Idea 3: Play music when stepping into the shower.
+
+IMG_FAD93CFCDAE6-1
+
+Idea 4: Send reminder to the parents when their children are apart from them in a certain distance to avoid losing their children in public space.
+
+IMG_0528
+
+Idea 5: Detect the skin color to find the matching foundation color
+
+IMG_A4D2CBEE66C0-1
+
+
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
