@@ -1,9 +1,10 @@
 # Ph-UI!!!
 
 **NAMES OF COLLABORATORS HERE**
+Jane Wang
+Christy Wu
 
-
-For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
+For lab this week, we focus on both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
 ## Part 1 Lab Preparation
 
@@ -14,7 +15,7 @@ As always, pull updates from the class Interactive-Lab-Hub to both your Pi and y
 
 ```
 pi@ixe00:~$ cd Interactive-Lab-Hub
-pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2022
+pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2021
 pi@ixe00:~/Interactive-Lab-Hub $ git add .
 pi@ixe00:~/Interactive-Lab-Hub $ git commit -m "get lab4 content"
 pi@ixe00:~/Interactive-Lab-Hub $ git push
@@ -153,7 +154,9 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Joystick_Py) to learn more about the sensor!
 
-#### Distance Sensor
+#### (Optional) Distance Sensor
+
+Note: We did not distribute this sensor to you, so if you are interested in playing with it, please come pick it up from the TA!
 
 Earlier we have asked you to play with the proximity sensor, which is able to sense object within a short distance. Here, we offer [Qwiic Multi Distance Sensor](https://www.sparkfun.com/products/17072), which has a field of view of about 25° and is able to detect objects up to 3 meters away! 
 
@@ -176,10 +179,44 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
 
+***
+Idea 1: posture on chairs to remind for sitting posture, cultivate habit for healthy spines by keep sitting traight!
+
+![IMG_1B2D79A80DAA-1](https://user-images.githubusercontent.com/71368796/195479150-2b77f0ac-b591-4268-bc50-2f26c46809cb.jpeg)
+
+
+Idea 2: Get the right angle to draw everything!
+
+![IMG_BD76BAFCED18-1](https://user-images.githubusercontent.com/71368796/195481171-1dcb9e93-fb89-478c-93c7-0be94ac1064a.jpeg)
+
+
+Idea 3: Play music when stepping into the shower.
+
+![IMG_FAD93CFCDAE6-1](https://user-images.githubusercontent.com/71368796/195483874-91038473-ff3b-4d0e-9263-7517a1d3f65a.jpeg)
+
+
+Idea 4: Send reminder to the parents when their children are apart from them in a certain distance to avoid losing their children in public space.
+
+![IMG_0528](https://user-images.githubusercontent.com/71368796/195484609-795d3d71-795d-4eaf-8c3e-62e87613197e.jpg)
+
+
+Idea 5: Detect the skin color to find the matching foundation color
+
+![IMG_A4D2CBEE66C0-1](https://user-images.githubusercontent.com/71368796/195485612-6c9d0e18-2b57-43b4-baca-7d608e767cbf.jpeg)
+
+
+***
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+For both the second and the fifth idea, we need to attach a button in order to save the “current infomration”, either it’s a color or an angle. And if the button be clicked again, the infomration should be cleared.
+
+For the fourth idea, our distance sensor lost sense in a pretty small distance when testing (it won’t detect anything beyond 6inch). While in reality a kid would be fine to walk around with parents within a larger scale of distance, so this idea need to develop a way to solve this problem.
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
 
+We will go forward with the first idea.
+![IMG_0531](https://user-images.githubusercontent.com/71368796/196311290-b78d29b7-5750-4fb9-85ef-35b7143869dc.jpg)
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -221,16 +258,59 @@ Think about how you want to present the information about what your sensor is se
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
 
+Adding slider button to adjust sound
+
+![IMG_F5FD379AEABB-1](https://user-images.githubusercontent.com/71368796/196311926-0600ed34-ada9-4e09-a41d-13de66b99dd8.jpeg)
+
+Adding screen to display distance
+
+![IMG_D1213E57F51C-1](https://user-images.githubusercontent.com/71368796/196312104-9fae3403-4dcc-4df1-b8d2-f6acb31e090a.jpeg)
+
+Adding a separate screen to display distance
+
+![IMG_DCA3DD777F56-1](https://user-images.githubusercontent.com/71368796/196312278-ab8f0ae4-6bc9-4b24-a087-062135e5cef6.jpeg)
+
+Adding speaker to play the alarm
+
+![IMG_E8F70CB9C9EC-1](https://user-images.githubusercontent.com/71368796/196312382-6e176c06-f2d3-47f0-aa66-6a1283e657c1.jpeg)
+
+Adding button to start/quit
+
+![IMG_D1E2E4C4DE05-1](https://user-images.githubusercontent.com/71368796/196312687-8c485dd6-15be-4b03-94c8-26c9643bb9b6.jpeg)
+
+
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+
+We chose to go with sound notification instead of display visually. When using this interation, users are either using computer or doing work, so it's difficult and distracting for them to keep an eye on another screen to track the status for sitting posture. While using sounds, user can ignore the product if they are sitting straight, and notify them if their siting posture goes wrong. 
+
+We also wanted to use a slider to allow users to adjust volumn of the alarm.
+
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+![IMG_0532](https://user-images.githubusercontent.com/71368796/196311321-946140f7-6b1f-4b27-b693-8ebf41a16653.jpg)
+
+
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+The height of the sensor when it is attached to the chair should be around neck area so that if the person is not sitting straight, the distance between their neck and the chair will increase. 
 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+![image](https://user-images.githubusercontent.com/71368796/195477292-7753cbd2-209b-4202-a893-07dbda4922cb.png)
 
+We integrated the distance detector and the speaker in the front of the device, so that it could detect its distance to the user and play the audio when user is not sitting straight/ leaning forward too much.
+
+![image](https://user-images.githubusercontent.com/71368796/195477325-7ba7248e-e2a5-4978-a975-53949e91ad0f.png)
+
+We made a volume control switch on the top of the box so that users could adjust the volume of the audio warning.
+
+![image](https://user-images.githubusercontent.com/71368796/195477369-2309c96a-70f8-489e-8d07-ea9b143a476f.png)
+
+
+We used the band to tie the device on the chair, and we think the device could be equipped as a neck pillow so that it could remind users of their sitting posture while making them comfortable. We think that the device could be incorporated into a real neck pillow tied on the chair's back.
 
 LAB PART 2
 
@@ -241,7 +321,7 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 ### Part E (Optional)
 ### Servo Control with Joystick
 
-In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which are included in your kit. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
+In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which we will be distributing the battery packs in the class. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
 
 <img src="Servo_Setup.jpg" width="400"/>
 
@@ -268,10 +348,31 @@ You can then call whichever control you like rather than setting a fixed value f
 We encourage you to try using these controls, **while** paying particular attention to how the interaction changes depending on the position of the controls. For example, if you have your servo rotating a screen (or a piece of cardboard) from one position to another, what changes about the interaction if the control is on the same side of the screen, or the opposite side of the screen? Trying and retrying different configurations generally helps reveal what a design choice changes about the interaction -- _make sure to document what you tried_!
 
 ### Part F
+
+### User Testing
+
+Participants are pretty satisfied with the interaction. The only thing is that they wanted more feature into this product. So we added a feature of prolonged sitting reminder - if user sit on the chair for a continuely long time, it will play the alarm to remind user to stnd uo and take a break.  
+
 ### Record
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eTJ3ovp_zRo/0.jpg)](https://www.youtube.com/watch?v=eTJ3ovp_zRo)
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
-* "Works like": shows what the device can do
-* "Acts like": shows how a person would interact with the device
+
+The height of the sensor when it is attached to the chair should be around neck area so that if the person is not sitting straight, the distance between their neck and the chair will increase.
+
+Ideally, the prototype should be small while it can be uncomfortable to have a big box behind user's back. 
+
+And finally it should be easy to adjust the height of where it attached to the chair to adopt different user's height.
+
+![image](https://user-images.githubusercontent.com/71368796/196324611-69822e2f-b165-4ed1-b057-72ec455e835d.png)
+
+![image](https://user-images.githubusercontent.com/71368796/196324883-503799e6-259f-405c-8a7c-727e87699dd0.png)
+
+
+* "Works like" & "Acts like"
+
+https://user-images.githubusercontent.com/71368796/196324660-07bf8a26-0e82-488a-a734-2c73919b5f92.mp4
+
 

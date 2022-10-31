@@ -1,7 +1,6 @@
 # Observant Systems
 
-**NAMES OF COLLABORATORS HERE**
-
+Collaborated with Chrsity Wu
 
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
 Your **observant device** could, for example, count items, find objects, recognize an event or continuously monitor a room.
@@ -102,6 +101,36 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
+contours-detection
+
+<img width="877" alt="Screen Shot 2022-10-24 at 4 20 18 PM" src="https://user-images.githubusercontent.com/71368796/197622344-274c2de8-aa90-4bbc-a9cc-144297a05299.png">
+
+Design:
+We can embed this into Zoom meeting to allow users send emoji without typing it out. For exmaple, if user shows a thumb in front of the camera, it could detect the contour of the thumb and match it with the emoji accordingly and shows it in the meeting. 
+
+face-detection
+
+<img width="866" alt="Screen Shot 2022-10-24 at 4 21 45 PM" src="https://user-images.githubusercontent.com/71368796/197622426-79d683ae-9526-494e-96cc-ca48f9fa1840.png">
+
+Design:
+We can attach this onto door safety system to see if there is sketchy people wondering around outside of the house. And it could notify the house owner if it found something suspicious. 
+
+flow-detection
+
+<img width="840" alt="Screen Shot 2022-10-24 at 4 23 33 PM" src="https://user-images.githubusercontent.com/71368796/197622478-7dc9608c-cb91-4572-9320-cdb23c2cc7f2.png">
+
+Design:
+We can use this feature to detect the tram movement and thus make it easier for us to manage time. For example, we can put it in front of our windows ad is the tram moving from left to right, it knows the tram is coming to Roosevelt island from Manhatten; and if the tram is moving from right to left, then it knows the tram is leaving to Manhatten from Roosevelt island. 
+
+object-detection
+
+<img width="838" alt="Screen Shot 2022-10-24 at 4 25 40 PM" src="https://user-images.githubusercontent.com/71368796/197622527-f4c6be53-a18d-42c8-a257-8bbb5886130c.png">
+
+Design:
+We can use the object detection to see how many cars are on the street to evaluate the traffic condition.
+
+
+
 #### Filtering, FFTs, and Time Series data. 
 Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU or Microphone data stream could create a simple activity classifier between walking, running, and standing.
 
@@ -139,6 +168,15 @@ For technical references:
 
 
 **\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
+
+**1. Set up threshold detection** 
+
+Output:
+
+<img width="506" alt="image" src="https://user-images.githubusercontent.com/71368796/197634158-3e491303-ea8d-47af-b5ce-ca87bad56f9a.png">
+
+https://github.com/Christywu16/Interactive-Lab-Hub/blob/Fall2022/Lab%205/testaudio.py
+
 
 ### (Optional Reading) Introducing Additional Concepts
 The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pi Image, so you can move onto part B.** However, you are welcome to try it on your personal computer. If this functionality is desirable for your lab or final project, we can help you get a different image running the last OS and version of python to make the following code work.
@@ -229,21 +267,54 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+contours-detection
+
+We wanted to embed contours detection feature into Zoom meeting. By doing this, it allows users send emoji without typing it out. 
+
+For exmaple, if user shows a up thumb in front of the camera, it could detect the contour of the thumb and match it with the emoji accordingly. Then iit will automatically shows the emoji in the Zoom meeting. 
+
+<img width="1042" alt="Screen Shot 2022-10-24 at 6 26 11 PM" src="https://user-images.githubusercontent.com/71368796/197642386-feaa84ac-3706-4b4e-abb1-be0e424b8083.png">
+
+contours-detection
+
+We wanted to embed contours detection feature into Zoom meeting. By doing this, it allows users send emoji without typing it out. 
+
+For exmaple, if user shows a up thumb in front of the camera, it could detect the contour of the thumb and match it with the emoji accordingly. Then iit will automatically shows the emoji in the Zoom meeting. 
+
+
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+1. What it is supposed to do?
+
+It supposed to detect contour image of the user's hand or body posture, e.g. raising hand, thumbs up, thumbs down. Then it could match the contour image with the emoji and send the correct emoji out into Zoom meeting. 
+
+2. When does it fail? 3. When it fails, why does it fail?
+
+When the user is holding hands in front of their body, it is hard to differenciate between user's body and hand.
+
+When the user is raising hands besides of the body but the background color is messy, it is also hard to detect a clear contour of the body posture.
+
+4. Based on the behavior you have seen, what other scenarios could cause problems?
+It could detect emojis when the user is ot intending to express anything but accidentally have a body posture that creates a match.
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+    Yes. The video detection will make some mistakes while the contours it detected is not clear and confusing for the computer.
+2. How bad would they be impacted by a miss classification?
+    It will disrupt the meeting process and will require additional discussion to resolve the misunderstanding. 
+3. How could change your interactive system to address this?
+    We can add a pop-up window to ask the user to confirm the detected information is correct.
+    
+    "Are you trying to send 👍?"
+    "Yes"           "No"
+    
+4. Are there optimizations you can try to do on your sense-making algorithm.
+    It would be more accurate to adding the movement in addition of the contour detection. 
+    In this case it can track the user's movement is raising hand, and the detected contour is also matching with the emoji.
+    By doing this, both data could be used to confirm the detection is accurate. 
 
 ### Part D
 ### Characterize your own Observant system
@@ -251,14 +322,21 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
-* What is a good environment for X?
-* What is a bad environment for X?
-* When will X break?
-* When it breaks how will X break?
+    Contour dection allows users to automatically send emoji in Zoom meeting through body postuure detection. 
+* What is a good environment for X? 
+    The user's video has high quality, bright light, and clean background. 
+* What is a bad environment for X? 
+    The user's video has low quality, dim light, and messy background. 
+* When will X break? * When it breaks how will X break?
+    When the user doesn't have enough color contrast to the background. 
 * What are other properties/behaviors of X?
-* How does X feel?
+    We can embed the pop-up window to ask for user's confirmation in the future. 
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
+https://youtu.be/egHhkvtsOhQ
+
+<img width="707" alt="Screen Shot 2022-10-24 at 6 21 30 PM" src="https://user-images.githubusercontent.com/71368796/197640888-69e0c434-69b5-451f-b979-b8fff1c5d429.png">
 
 ### Part 2.
 
