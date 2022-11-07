@@ -1,9 +1,11 @@
 # Little Interactions Everywhere
 
+**Collaberated with Christy Wu**
+
 ## Prep
 
 1. Pull the new changes from the class interactive-lab-hub. (You should be familiar with this already!)
-2. Install [MQTT Explorer](http://mqtt-explorer.com/) on your laptop.
+2. Install [MQTT Explorer](http://mqtt-explorer.com/) on your laptop. If you are using Mac, MQTT Explorer only works when installed from the [App Store](https://apps.apple.com/app/apple-store/id1455214828).
 3. Readings before class:
    * [MQTT](#MQTT)
    * [The Presence Table](https://dl.acm.org/doi/10.1145/1935701.1935800) and [video](https://vimeo.com/15932020)
@@ -52,7 +54,9 @@ Debugging and visualizing what's happening on your MQTT broker can be helpful. W
 
 Once connected, you should be able to see all the messages under the IDD topic. , go to the **Publish** tab and try publish something! From the interface you can send and plot messages as well. Remember, you are limited to subtopics of `IDD`. That is, to publish or subcribe, the topics will start with `IDD/`.
 
-![publish settings](imgs/mqtt_explorer_2.png?raw=true)
+
+<img width="1026" alt="Screen Shot 2022-10-30 at 10 40 32 AM" src="https://user-images.githubusercontent.com/24699361/198885090-356f4af0-4706-4fb1-870f-41c15e030aba.png">
+
 
 
 ### Part B
@@ -63,28 +67,46 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 **Running Examples on Pi**
 
 * Install the packages from `requirements.txt` under a virtual environment, we will continue to use the `circuitpython` environment we setup earlier this semester:
+
   ```
-  pi@ixe00:~ $ source circuitpython/bin/activate
-  (circuitpython) pi@ixe00:~ $ cd Interactive-Lab-Hub/Lab\ 6
-  (circuitpython) pi@ixe00:~ Interactive-Lab-Hub/Lab 6 $ pip install -r requirements.txt
+  pi@raspberrypi:~/Interactive-Lab-Hub $ source circuitpython/bin/activate
+  (circuitpython) pi@raspberrypi:~/Interactive-Lab-Hub $ cd Lab\ 6
+  (circuitpython) pi@raspberrypi:~/Interactive-Lab-Hub/Lab 6 $ pip install -r requirements.txt
+  ...
   ```
 * Run `sender.py`, fill in a topic name (should start with `IDD/`), then start sending messages. You should be able to see them on MQTT Explorer.
+
   ```
-  (circuitpython) pi@ixe00:~ Interactive-Lab-Hub/Lab 6 $ python sender.py
-  pi@ReiIDDPi:~/Interactive-Lab-Hub/Lab 6 $ python sender.py
-  >> topic: IDD/ReiTesting
-  now writing to topic IDD/ReiTesting
+  (circuitpython) pi@raspberrypi:~/Interactive-Lab-Hub/Lab 6 $ python sender.py
+  >> topic: IDD/AlexandraTesting
+  now writing to topic IDD/AlexandraTesting
   type new-topic to swich topics
   >> message: testtesttest
   ...
   ```
-* Run `reader.py`, and you should see any messages being published to `IDD/` subtopics.
+* Run `reader.py`, and you should see any messages being published to `IDD/` subtopics. Type a message inside MQTT explorer and see if you can receive it with `reader.py`.
+
   ```
-  (circuitpython) pi@ixe00:~ Interactive-Lab-Hub/Lab 6 $ python reader.py
+  (circuitpython) pi@raspberrypi:~ Interactive-Lab-Hub/Lab 6 $ python reader.py
   ...
   ```
 
+<img width="890" alt="Screen Shot 2022-10-30 at 10 47 52 AM" src="https://user-images.githubusercontent.com/24699361/198885135-a1d38d17-a78f-4bb2-91c7-17d014c3a0bd.png">
+
+
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
+
+1. Lie to Me Game: Hoster can send a question to participant, and participant should send back their answer to the question. Camera and face detection are embeded to analyze the facial expression of participant and predicate if participant is lying. 
+
+2. Online Trivia: MQTT is using to transfer messages. It sends Trivia questions from the hoster and receives the answers from every participants' device. 
+
+3. HealthCare Managing System: Each nurse can report to the leader using MQTT with each patient's condition and treatment they took cared of. 
+
+4. Group Mood Board: Participants can post their moods into the channels with MQTT. As they start to try healthier lifestyle and diet, the hoster can post all responds anonymously at the end of each day. Participants can see how the group is doing and how the mood trend changes as time goes by.
+
+5. Anti-Theft Zipper: A zipper with a touch sensor could be implemented on the bag. When someone else is touching the bag, the bag owner would receive a reminder from the MQTT and be aware of any security issues.
+
+
 
 ### Part C
 ### Streaming a Sensor
@@ -101,14 +123,19 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 </p>
 
  ```
- (circuitpython) pi@ixe00:~ Interactive-Lab-Hub/Lab 6 $ python distributed_twizzlers_sender.py
+ (circuitpython) pi@raspberrypi:~ Interactive-Lab-Hub/Lab 6 $ python distributed_twizzlers_sender.py
  ...
  ```
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
+![IMG_6013](https://user-images.githubusercontent.com/46438303/200400811-99eb5326-5bb6-4f83-a0bf-b764302d4d9e.jpeg)
+<img width="320" alt="Screen Shot 2022-11-07 at 11 31 55 AM" src="https://user-images.githubusercontent.com/46438303/200401026-8f379914-d5b0-49f5-aaba-a6d94e2c17f8.png">
+<img width="643" alt="Screen Shot 2022-11-07 at 11 31 41 AM" src="https://user-images.githubusercontent.com/46438303/200401209-7856d3c3-770a-46f7-9dbf-8a90dd51ce7d.png">
+
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
+![IMG_6022](https://user-images.githubusercontent.com/46438303/200401622-26beac4e-27ba-4f52-a46c-6bf9da45c717.jpeg)
 
 ### Part D
 ### The One True ColorNet
@@ -124,10 +151,10 @@ The first step on the path to *collective* enlightenment, plug the [APDS-9960 Pr
 </p>
 
 
-The second step to achieving our great enlightenment is to run `color.py`. We have talked about this sensor back in Lab 2 and Lab 4, this script is similar to what you have done before! Remember to ativate the `circuitpython` virtual environment you have been using during this semester before running the script:
+The second step to achieving our great enlightenment is to run `color.py`. We have talked about this sensor back in Lab 2 and Lab 4, this script is similar to what you have done before! Remember to activate the `circuitpython` virtual environment you have been using during this semester before running the script:
 
  ```
- (circuitpython) pi@ixe00:~ Interactive-Lab-Hub/Lab 6 $ python color.py
+ (circuitpython) pi@raspberrypi:~ Interactive-Lab-Hub/Lab 6 $ python color.py
  ...
  ```
 
@@ -140,6 +167,10 @@ You may ask "but what if I missed class?" Am I not admitted into the collective 
 Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-true-colornet.glitch.me/) and become one with the ColorNet on the inter-webs. Glitch is a great tool for prototyping sites, interfaces and web-apps that's worth taking some time to get familiar with if you have a chance. Its not super pertinent for the class but good to know either way. 
 
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
+![3DB3B3B1-B6B6-46A7-8EA1-8BC0FB595D4D_1_105_c](https://user-images.githubusercontent.com/46438303/200399896-70caf8e0-38cd-4a6c-a8fe-4ecf121fc3e0.jpeg)
+![EBE7A2B4-23DC-476A-9EB6-90CCFE65480D_1_105_c](https://user-images.githubusercontent.com/46438303/200399915-a83c05ba-ba0f-4ebd-b748-bc64c2d98621.jpeg)
+
+<img width="258" alt="Screen Shot 2022-11-07 at 12 55 03 AM" src="https://user-images.githubusercontent.com/46438303/200401769-e7fe5c19-df33-42dd-98e4-11715d3442fc.png">
 
 
 ### Part E
@@ -155,5 +186,8 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/QT9yOd82190/0.jpg)](https://youtube.com/shorts/QT9yOd82190)
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
+
+**\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
