@@ -172,7 +172,6 @@ Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-
 
 <img width="258" alt="Screen Shot 2022-11-07 at 12 55 03 AM" src="https://user-images.githubusercontent.com/46438303/200401769-e7fe5c19-df33-42dd-98e4-11715d3442fc.png">
 
-
 ### Part E
 ### Make it your own
 
@@ -180,14 +179,43 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 
+Our interaction of anti-theft smart zipper provides an easy way for users to get notified when someone if trying to open their bag. 
+
+![IMG_C7093DCCE6C8-1](https://user-images.githubusercontent.com/71368796/200478850-729da1fe-3aa6-4c5e-9dbe-2d31ab970e6a.jpeg)
+
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+
+Input: the data that touch sensor receives
+
+Player/user: owner of the bag/belonging
+
+Output: Alarm message on user's mobile device 
+
+Trigger: anyone else touches the zipper
+
+Computation occur: when someone tries to open the user's bag, the sensor on the zipper receives data and tells program to generate alarm message then sender program trasfer the message to users' mobile device. 
+
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
+Please see video.
+
+No. The user shouldn't tell the zipper is anti-theft or else the theft will break the zipper or try another way to steal. 
+
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
+
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/QT9yOd82190/0.jpg)](https://youtube.com/shorts/QT9yOd82190)
+
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
+
+Alarm message. 
+
+![IMG_E98C2D11F49E-1](https://user-images.githubusercontent.com/71368796/200477985-656613f0-1c99-424e-9c02-0cb54d415bf5.jpeg)
+
+
+![IMG_9941](https://user-images.githubusercontent.com/71368796/200447634-fdaaa2c2-2bfa-4063-92ff-35c5a4b38fdc.PNG)
