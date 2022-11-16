@@ -14,7 +14,14 @@ Write-up and documentation due - December 12
 ## Project Plan
 
 ### Big Idea
-Our another idea is building a Christmas Advent calendar to count the days of advent to Christmas from December 1st to Christmas Eve. Users could open a “calendar door” every day to reveal a different Christmas song. We would use two touch sensors to detect the day user’s trying to see and use the webcam to play the song. We will also use an OLED display to display the days left until Christmas. We would also use the joystick for users to play/pause/replay the song.
+Our idea is building a Christmas Advent calendar to count the days of advent to Christmas from December 1st to Christmas Eve. Users could open a “calendar door” every day to reveal a different Christmas song. We would use two touch sensors to detect the day user’s trying to see and use the webcam to play the song. We will also use an OLED display to display the days left until Christmas. We would also use the joystick for users to play/pause/replay the song.
+
+![IMG_0C717BDF4559-1](https://user-images.githubusercontent.com/46438303/202084432-cfe08674-98f1-4e9d-8e1e-1f4f82dffd49.jpeg)
+
+![IMG_1A4C7A273C00-1](https://user-images.githubusercontent.com/46438303/202084475-f381fcf3-15d6-49e2-9833-6365d8bd2a8e.jpeg)
+
+![IMG_69C290C7B634-1](https://user-images.githubusercontent.com/46438303/202084482-688a839c-18ce-453d-91bc-91a0bacabb35.jpeg)
+
 
 ### Timeline
 Nov 18th: Confirm project idea   
