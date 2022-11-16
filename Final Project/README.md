@@ -1,6 +1,5 @@
 # Final Project
-Collaborated with Chirss
-Using the tools and techniques you learned in this class, design, prototype and test an interactive device.
+Collaborated with Chirsty Wu
 
 Project plan - November 15
 
@@ -12,16 +11,38 @@ Final Project Presentations - December 6
 
 Write-up and documentation due - December 12
 
-## Objective
+## Project Plan
 
-The goal of this final project is for you to have a fully functioning and well-designed interactive device of your own design.
- 
-## Description
-Your project is to design and build an interactive device to suit a specific application of your choosing, and test the interaction with people. 
+###Big Idea
+Our another idea is building a Christmas Advent calendar to count the days of advent to Christmas from December 1st to Christmas Eve. Users could open a “calendar door” every day to reveal a different Christmas song. We would use two touch sensors to detect the day user’s trying to see and use the webcam to play the song. We will also use an OLED display to display the days left until Christmas. We would also use the joystick for users to play/pause/replay the song.
 
-## Deliverables
+###Timeline
+Nov 18th: Confirm project idea
+Nov 25th: Assemble and order needed parts/sensor, foundational coding parts 
+Dec 2th: Furthur coding parts for essential functions, e.g. reading data from sensors, showing data on raspberry pi screen interface 
+Dec 9th: 1) Testing; 2) Adding button, Joystick, LED and interaction of them 
+Dec 16th: Finalize documents and coding, final Project Deadline 
 
-1. Project plan: Big idea, timeline, parts needed, fall-back plan.
+
+###Parts Needed
+1 x Raspberry Pi 4 Computer Kit
+1 x Adafruit MPR121 Capacitive Touch Sensor QT
+1 x Adafruit Mini PiTFT
+1 x SparkFun Qwiic OLED Display
+1 x Copper Foil Tape
+1 x Raspberry Pi 4 Power Supply with USB C
+1 x 32GB MicroSD Cards w/ Card Reader
+
+###Risks/ Contingencies
+We need two to two touch sensors to have each calendar day match to an individual hole on the touch sensor. There’s the risk that the Raspberry Pi couldn’t detect multiple touch sensors at the same time, or give inaccurate touch results.
+The copper foil tape may need to be sticked on the back of the cardboard sticker in a certain way to be conductive and readable to the whole calendar.
+The joystick may not give accurate results with the user's manipulation or not intuitive to users. 
+
+###Fall-back Plan
+If the interaction has some unexpected difficulty or if the Joystick part function couldn’t run as we expected, we will simplify the device to finish playing the Christmas song once the user revealing the calendar door, so that we will have the MVP product to allow raspberry pi play a different song everyday in countdown to Christmas.
+
+
+## Future Deliverables
 
 2. Functioning project: The finished project should be a device, system, interface, etc. that people can interact with.
 
@@ -36,12 +57,3 @@ Your project is to design and build an interactive device to suit a specific app
 
 It is fine to change your project goals, but please resubmit the project plan for the new design when you do that.
 
-
-## Teams
-
-You can and are not required to work in teams. Be clear in documentation who contributed what. The total project contributions should reflect the number of people on the project.
-
-## Examples
-
-[Here is a list of good final projects from previous classes.](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Previous-Final-Projects)
-This version of the class is very different, but it may be useful to see these.
