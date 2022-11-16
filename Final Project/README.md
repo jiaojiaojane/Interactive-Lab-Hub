@@ -14,7 +14,7 @@ Write-up and documentation due - December 12
 ## Project Plan
 
 ### Big Idea
-Our idea is building a Christmas Advent calendar to count the days of advent to Christmas from December 1st to Christmas Eve. Users could open a “calendar door” every day to reveal a different Christmas song. We would use two touch sensors to detect the day user’s trying to see and use the webcam to play the song. We will also use an OLED display to display the days left until Christmas. We would also use the joystick for users to play/pause/replay the song.
+Our idea is building a Advent calendar to count down the days to Christmas by revealing a Christmas song every day from December 1st. We will use cardboard to make 24 mini "CD" with copper tape on the back. User could pick a "CD" everyday, and put it into a drawer of the calendar. When the "CD" is detected by the touch sensor, the calendar will play a Christmas song through the music player. We will also use a Mini PiTFT to display the days left until Christmas and the name of the playing song. We would also use the joystick for users to play/pause/replay the song.
 
 ![IMG_0C717BDF4559-1](https://user-images.githubusercontent.com/46438303/202084432-cfe08674-98f1-4e9d-8e1e-1f4f82dffd49.jpeg)
 
@@ -22,7 +22,7 @@ Our idea is building a Christmas Advent calendar to count the days of advent to 
 
 ![IMG_69C290C7B634-1](https://user-images.githubusercontent.com/46438303/202084482-688a839c-18ce-453d-91bc-91a0bacabb35.jpeg)
 
-
+*Calender picture credit to Amazon.com
 ### Timeline
 Nov 18th: Confirm project idea   
 Nov 25th: Assemble and order needed parts/sensor, foundational coding parts    
