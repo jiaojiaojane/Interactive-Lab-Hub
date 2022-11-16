@@ -17,21 +17,21 @@ Write-up and documentation due - December 12
 Our another idea is building a Christmas Advent calendar to count the days of advent to Christmas from December 1st to Christmas Eve. Users could open a “calendar door” every day to reveal a different Christmas song. We would use two touch sensors to detect the day user’s trying to see and use the webcam to play the song. We will also use an OLED display to display the days left until Christmas. We would also use the joystick for users to play/pause/replay the song.
 
 ### Timeline
-Nov 18th: Confirm project idea\n
-Nov 25th: Assemble and order needed parts/sensor, foundational coding parts\n 
-Dec 2th: Furthur coding parts for essential functions, e.g. reading data from sensors, showing data on raspberry pi screen interface\n 
-Dec 9th: 1) Testing; 2) Adding button, Joystick, LED and interaction of them\n
-Dec 16th: Finalize documents and coding, final Project Deadline\n
+Nov 18th: Confirm project idea   
+Nov 25th: Assemble and order needed parts/sensor, foundational coding parts    
+Dec 2th: Furthur coding parts for essential functions, e.g. reading data from sensors, showing data on raspberry pi screen interface     
+Dec 9th: 1) Testing; 2) Adding button, Joystick, LED and interaction of them      
+Dec 16th: Finalize documents and coding, final Project Deadline
 
 
 ### Parts Needed
-1 x Raspberry Pi 4 Computer Kit
-1 x Adafruit MPR121 Capacitive Touch Sensor QT
-1 x Adafruit Mini PiTFT
-1 x SparkFun Qwiic OLED Display
-1 x Copper Foil Tape
-1 x Raspberry Pi 4 Power Supply with USB C
-1 x 32GB MicroSD Cards w/ Card Reader
+1 x Raspberry Pi 4 Computer Kit 
+1 x Adafruit MPR121 Capacitive Touch Sensor QT      
+1 x Adafruit Mini PiTFT    
+1 x SparkFun Qwiic OLED Display    
+1 x Copper Foil Tape       
+1 x Raspberry Pi 4 Power Supply with USB C      
+1 x 32GB MicroSD Cards w/ Card Reader   
 
 ### Risks/ Contingencies
 We need two to two touch sensors to have each calendar day match to an individual hole on the touch sensor. There’s the risk that the Raspberry Pi couldn’t detect multiple touch sensors at the same time, or give inaccurate touch results.
