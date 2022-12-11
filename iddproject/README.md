@@ -3,8 +3,6 @@ Chirsty Wu, Jane Wang
 
 Interaction video: https://youtu.be/cfKcqcfuPkg
 
-Project Plan: https://docs.google.com/document/d/1tY0dgCaez3t-gsv-lJSgg6SQf8FUCPhlGfKZ0m2dYyw/edit?usp=sharing
-
 Slides: https://docs.google.com/presentation/d/1il5nJV2FVKNd_7D5PSS36YFSi_BLxcFjOCkexU8aIdo/edit?usp=sharing
 
 Project Reflection: https://docs.google.com/document/d/194lsdhRObo3M87lPoVFc20oKGndOnBeBeQU28u12rzE/edit?usp=sharing
@@ -58,6 +56,3 @@ If the interaction has some unexpected difficulty or if the Joystick part functi
 
 7. Group work distribution questionnaire
 
-## Change of Design
-
-It is fine to change your project goals, but please resubmit the project plan for the new design when you do that.
