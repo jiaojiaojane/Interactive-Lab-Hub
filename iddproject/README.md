@@ -1,15 +1,13 @@
 # Final Project
-Collaborated with Chirsty Wu
+Chirsty Wu, Jane Wang
 
-Project plan - November 15
+Interaction video: https://youtu.be/cfKcqcfuPkg
 
-Peer feedback on Project plans: November 17
+Project Plan: https://docs.google.com/document/d/1tY0dgCaez3t-gsv-lJSgg6SQf8FUCPhlGfKZ0m2dYyw/edit?usp=sharing
 
-Functional check-off - November 29 & December 1
+Slides: https://docs.google.com/presentation/d/1il5nJV2FVKNd_7D5PSS36YFSi_BLxcFjOCkexU8aIdo/edit?usp=sharing
 
-Final Project Presentations - December 6
-
-Write-up and documentation due - December 12
+Project Reflection: https://docs.google.com/document/d/194lsdhRObo3M87lPoVFc20oKGndOnBeBeQU28u12rzE/edit?usp=sharing
 
 ## Project Plan
 
