@@ -67,6 +67,7 @@ While users check calendars, it’s always useful to inform the user of the weat
 
 ### Task 4: Using joystick to control the music player
 Afterwards, we added the joystick interaction to control the play of the song. The user could push the joystick backword to pause a playing song. 
+[![Watch the video](https://img.youtube.com/vi/PZrnbkUqFIo/maxresdefault.jpg)](https://youtu.be/PZrnbkUqFIo)
 
 ### Task 5: Deployment on the actual calendar
 One challenge here was how to design the touch interaction and how to arrange the copper tape on the physical cardboard calendar. The initial idea was it will play the song when the user takes out of one of the boxes, while this is hard to achieve since the program will be based on while there is no data received on the touch sensor. Then we convert the copper tape to the jointer point between box and cardboard so that the user would touch the copper when they take out the box. 
